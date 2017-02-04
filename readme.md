@@ -19,6 +19,8 @@ by jumping tees and removing the tee that was jumped.
 
 The solver script performs a simple brute force search using various starting holes.
 
+There are several optimizations that could be applied to make the solver run faster (memoization) but it runs in under 10 seconds as is on my laptop.
+
 ## Results
 
 It turns out that the best place to start (best first hole) is in the middle of an edge.
