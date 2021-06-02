@@ -1,7 +1,7 @@
 {
     "name": "cracker-barrel",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "src/index.js",
     "repository": "https://github.com/drmikeh/cracker-barrel.git",
     "author": "Dr. Mike Hopper <drmikeh@gmail.com>",
     "license": "MIT",
@@ -11,7 +11,7 @@
         ]
     },
     "scripts": {
-        "start": "node index.js",
+        "start": "node src/index.js",
         "prepare": "husky install",
         "postinstall": "husky install",
         "test:ci": "jest",
@@ -22,10 +22,11 @@
         "eslint:fix": "eslint --fix src/**/*.js"
     },
     "devDependencies": {
-        "eslint": "^7.2.0",
+        "eslint": "^7.27.0",
         "eslint-config-airbnb": "18.2.1",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jest": "^24.3.6",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-prettier": "^3.4.0",
         "eslint-plugin-react": "^7.21.5",

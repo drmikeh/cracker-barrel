@@ -7,7 +7,6 @@ describe('solve', () => {
     it('solves a game leaving just one tee', () => {
         const game = new Game(0)
         const solution = solve(game)[0]
-        console.log(solution)
         expect(solution).toBeDefined()
         expect(solution).not.toBeNull()
 
