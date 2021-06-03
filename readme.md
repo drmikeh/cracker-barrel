@@ -14,7 +14,6 @@ and want to end with this:
 
 by jumping tees and removing the tee that was jumped.
 
-
 ## The Solver
 
 The solver script performs a simple brute force search using various starting holes.

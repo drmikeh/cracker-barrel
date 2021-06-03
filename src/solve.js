@@ -1,21 +1,23 @@
 const Game = require('./game');
 
 function solve(game, solutions = []) {
-    let legalMoves = game.getLegalMoves()
+    const legalMoves = game.getLegalMoves();
     if (legalMoves.length === 0) {
-        let finalScore = game.getCount()
+        const finalScore = game.getCount();
         if (finalScore === 1) {
-            solutions.push(game)
+            solutions.push(game);
         }
-    }
-    else {
+    } else {
         legalMoves.forEach(move => {
-            let tryGame = new Game(game.state.slice(0), game.history.slice(0))
-            tryGame.move(move)
-            solve(tryGame, solutions)
-        })
+            const tryGame = new Game(
+                game.state.slice(0),
+                game.history.slice(0),
+            );
+            tryGame.move(move);
+            solve(tryGame, solutions);
+        });
     }
-    return solutions
+    return solutions;
 }
 
 module.exports = solve;
