@@ -73,4 +73,4 @@ ${this.state[10]} ${this.state[11]} ${this.state[12]} ${this.state[13]} ${this.s
     }
 }
 
-module.exports = Game;
+export default Game;

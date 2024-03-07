@@ -1,6 +1,6 @@
-const Game = require('./game');
-const solve = require('./solve');
-const replay = require('./replay');
+import Game from './game.js';
+import solve from './solve.js';
+import replay from './replay.js';
 
 const myArgs = process.argv.slice(2);
 const findAllSolutions = myArgs[0] === '-a' || myArgs[0] === '--all';

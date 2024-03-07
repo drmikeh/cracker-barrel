@@ -1,4 +1,4 @@
-const Game = require('./game');
+import Game from './game.js';
 
 function replay(solution) {
     console.log('Replaying Solution');
@@ -10,4 +10,4 @@ function replay(solution) {
     });
 }
 
-module.exports = replay;
+export default replay;

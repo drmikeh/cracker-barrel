@@ -1,4 +1,4 @@
-const Game = require('./game');
+import Game from './game.js';
 
 function solve(game, solutions = []) {
     const legalMoves = game.getLegalMoves();
@@ -20,4 +20,4 @@ function solve(game, solutions = []) {
     return solutions;
 }
 
-module.exports = solve;
+export default solve;

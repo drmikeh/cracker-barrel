@@ -1,5 +1,5 @@
-const Game = require('./game');
-const solve = require('./solve');
+import Game from './game.js';
+import solve from './solve.js';
 
 const countOnes = arr => arr.reduce((sum, n) => sum + n, 0);
 
